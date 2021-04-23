@@ -1,3 +1,4 @@
+import 'package:dev_quiz/home/widgets/level_button/level_button_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:dev_quiz/home/widgets/app_bar/app_bar_widget.dart';
 
@@ -12,7 +13,18 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBarWidget(),
-    );
+        appBar: AppBarWidget(),
+        body: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 14),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              LevelButtonWidget(label: 'Fácil'),
+              LevelButtonWidget(label: 'Médio'),
+              LevelButtonWidget(label: 'Difícil'),
+              LevelButtonWidget(label: 'Perito'),
+            ],
+          ),
+        ));
   }
 }
