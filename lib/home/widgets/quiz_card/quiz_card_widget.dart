@@ -18,12 +18,12 @@ class QuizCardWidget extends StatelessWidget {
             height: 40,
             child: Image.asset(AppImages.blocks),
           ),
-          SizedBox(height: 24),
+          SizedBox(height: 20),
           Text(
             'Gerenciamento de estado',
             style: AppTextStyles.heading15,
           ),
-          SizedBox(height: 24),
+          SizedBox(height: 20),
           Row(
             children: [
               Expanded(
@@ -34,7 +34,7 @@ class QuizCardWidget extends StatelessWidget {
                 ),
               ),
               Expanded(
-                flex: 4,
+                flex: 2,
                 child: LinearProgressIndicator(
                   value: 0.3,
                   backgroundColor: AppColors.chartSecondary,
